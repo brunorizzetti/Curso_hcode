@@ -50,11 +50,13 @@ array_push($pessoas, array(
 
 ));
 var_dump($pessoas); //é um array de array
+
 foreach ($pessoas as $key => $value) {
-    var_dump(array_values($key));
+    var_dump(($value));
     foreach ($value as $dados => $valor){
-        echo($valor).'<br>';
+        //echo($valor).'<br>';
     }
 
 }
 
+echo $pessoas[1]['nome'];
