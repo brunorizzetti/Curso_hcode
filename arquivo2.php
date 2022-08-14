@@ -34,7 +34,12 @@ function resumo_arrays()
     echo end($carros[1]);
 }
 
-$pessoas = array();
+$pessoas = [];
+
+array_push($pessoas, array(
+    'nome'=>'Pedro',
+    'idade'=>18
+));
 
 array_push($pessoas, array(
 
@@ -53,9 +58,9 @@ var_dump($pessoas); //é um array de array
 
 foreach ($pessoas as $key => $value) {
     var_dump(($value));
-    foreach ($value as $dados => $valor){
+    //foreach ($value as $dados => $valor){
         //echo($valor).'<br>';
-    }
+    //}
 
 }
 
